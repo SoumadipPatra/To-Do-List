@@ -1,2 +1,4 @@
-.env
+/*.env
+npm-debug.log
+.DS_Stroe
 /node_modules
