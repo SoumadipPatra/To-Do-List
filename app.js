@@ -24,6 +24,8 @@ mongoose.connect(process.env.MONGO_URI, {
   console.error(error.stack);
 });
 
+mongoose.connection.serverSelectionTimeoutMS = 30000;
+
 const itemsSchema = {
   name: String
 };
