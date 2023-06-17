@@ -14,7 +14,7 @@ app.use(express.static("public"));
 
 
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect('mongodb+srv://soumadippatra:%40SoumadipDB28@soumadip.c0t3khv.mongodb.net/todolistDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
