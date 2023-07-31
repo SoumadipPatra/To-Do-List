@@ -12,9 +12,9 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+//mongodb+srv://soumadippatra:%40SoumadipDB28@soumadip.c0t3khv.mongodb.net
 
-
-mongoose.connect('mongodb+srv://soumadippatra:%40SoumadipDB28@soumadip.c0t3khv.mongodb.net/todolistDB', {
+mongoose.connect('https://mongo-todo.onrender.com/todolistDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
